@@ -1,0 +1,17 @@
+syntax = "proto3";  // use proto3 syntax
+
+// gRPC service for checking book inventory
+service Inventory {
+  rpc CheckStock (StockRequest) returns (StockResponse);  // one RPC call: check a book's stock
+}
+
+// what the client sends: just a book title
+message StockRequest {
+  string title = 1;
+}
+
+// what the server returns: title + how many are in stock
+message StockResponse {
+  string title = 1;
+  int32 amount = 2;
+}
