@@ -38,7 +38,7 @@ python-engineio==4.13.1
 python-multipart==0.0.22
 python-socketio==5.16.1
 PyYAML==6.0.3
-setuptools==82.0.0
+setuptools==84.1.0
 simple-websocket==1.1.0
 starlette==0.52.1
 typing-inspection==0.4.2
